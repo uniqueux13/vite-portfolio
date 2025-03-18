@@ -1,0 +1,14 @@
+/* src/components/common/ThemeSwitcher/ThemeSwitcher.module.css */
+.switcher {
+    display: flex;
+    align-items: center; /* Vertically center label and select */
+    gap: 10px; /* Space between label and select */
+    margin-bottom: 1rem; /* Add some margin below the switcher */
+  }
+  
+  .select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
