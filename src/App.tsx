@@ -10,8 +10,6 @@ function App() {
   return (
     <Layout>
       <Hero
-        title="I'm Kyle the UX Magician."
-        subtitle="My Best Trick? Making Complex Problems Vanish."
       />
 
       <Card title="About Me">

@@ -74,6 +74,9 @@ interface Theme {
        '--hero-title-color': '#ffffff',
        '--hero-subtitle-color': '#ffffff',
        '--hero-padding': '4rem 2rem',
+       '--hero-title': 'From Zero to Portfolio in 8 Hours',
+       '--hero-subtitle': "I'm not a front-end coding wizard, but I *am* an expert UX designer and writer...",
+       '--hero-button-text': 'Contact Me',
   
        //Video Section
         '--video-container-background': 'black',
@@ -149,6 +152,9 @@ interface Theme {
           '--hero-title-color': '#ffffff',
           '--hero-subtitle-color': '#edf2f7',
           '--hero-padding': '5rem 3rem',
+          '--hero-title': 'Professional UX Design Solutions',
+          '--hero-subtitle': 'Delivering results-driven digital experiences for your business.',
+          '--hero-button-text': 'Get a Quote',
   
           //Video Section
           '--video-container-background': 'black',
@@ -224,6 +230,9 @@ interface Theme {
         '--hero-title-color': '#1a202c',
         '--hero-subtitle-color': '#ffffff',
         '--hero-padding': '6rem 2rem',
+        '--hero-title': 'Best UX Design Solutions',
+        '--hero-subtitle': 'Delivering results-driven digital experiences for your business.',
+        '--hero-button-text': 'Get a Quote',
   
       //Video Section
       '--video-container-background': 'black',
