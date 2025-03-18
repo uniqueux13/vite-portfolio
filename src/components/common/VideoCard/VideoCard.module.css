@@ -3,9 +3,13 @@
     border: 1px solid var(--secondary-color);
     border-radius: var(--border-radius);
     padding: var(--spacing-unit);
-    background-color: var(--background-color);
+    background-color: var(--card-background-color); /* Use card-background-color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: var(--margin-unit);
+  
+    /* Add max-width and centering */
+    max-width: 800px; /*  Set a maximum width. Adjust as needed. */
+    margin-left: auto;  /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
   }
   
   .videoWrapper {
@@ -21,16 +25,17 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border: none; /* Remove default iframe border */
+    border: none;
   }
   
   .videoTitle {
-    font-size: 1.25rem;
+    font-size: var(--font-size-h3); /* Use CSS variable */
     margin-top: var(--spacing-unit);
     margin-bottom: 0.5rem;
-    color: var(--primary-color);
+    color: var(--text-color); /* Consistent text color */
   }
   
   .videoDescription {
     color: var(--text-color);
+    font-size: var(--font-size-base);
   }

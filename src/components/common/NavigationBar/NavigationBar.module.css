@@ -1,37 +1,105 @@
 /* src/components/common/NavigationBar/NavigationBar.module.css */
 .navBar {
-    background-color: var(--navbar-background-color); /* Use theme variable */
-    padding: var(--navbar-padding); /* Use theme variable */
-      margin-bottom: var(--spacing-unit); /*Add Space between navbar and other content*/
-  }
-  
+  background-color: var(--navbar-background-color);
+  padding: var(--navbar-padding);
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Push logo to left, links/button to right */
+  align-items: center; /* Vertically center items */
+  position: relative; /* For hamburger positioning */
+  z-index: 2;
+}
+
+.logo {
+  font-weight: bold; /* Make the logo stand out */
+  font-size: 1.2rem;    /* Adjust as needed */
+  color: var(--navbar-link-color);
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Default to horizontal layout (for larger screens) */
+  align-items: center; /* Vertically center links */
+  gap: 0.5rem;       /* Reduce spacing between items - adjust as needed */
+}
+
+.navItem {
+  /* No margin needed here because of gap on .navList */
+}
+
+.navLink {
+  color: var(--navbar-link-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  display: block; /* Make the link fill the list item */
+}
+
+.navLink:hover,
+.navLink.active {
+  background-color: var(--navbar-link-hover-color);
+  color: var(--text-color);
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none; /* Hide by default on larger screens */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 3; /* Ensure hamburger is above other content */
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: var(--navbar-link-color); /* Use theme color */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Mobile Styles (using media query) */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
   .navList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center; /* Center the links */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute;        /* Position the menu */
+    top: 100%;              /* Position below the navbar */
+    left: 0;
+    width: 100%;
+    background-color: var(--navbar-background-color); /* Use theme color */
+    text-align: center;
+    display: none;
   }
-  
+
+  .navList.open {
+    display: flex; /* Show the menu when 'open' class is present */
+  }
   .navItem {
-    margin: 0 1rem; /*  Keep this for horizontal spacing */
+        padding: 10px; /* Add padding between links */
   }
-  
-  .navLink {
-    color: var(--navbar-link-color); /* Use theme variable */
+
+  .hamburger {
+    display: block; /* Show the hamburger button */
+  }
+
+    /* Rotate bars to create an X */
+  .open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+.buttonLink {
     text-decoration: none;
-    padding: 0.5rem 1rem; /* Keep this for link padding */
-    border-radius: var(--border-radius); /* Use theme variable */
-    transition: background-color 0.3s ease;
-    border: none;        /* Remove default button border */
-    background-color: transparent;  /* Start with transparent background */
-    cursor: pointer;
-    font-family: inherit;      /* Inherit font from parent */
-    font-size: 1rem;
-  }
-  
-  .navLink:hover,
-  .navLink.active { /* Style for hover AND active states */
-    background-color: var(--navbar-link-hover-color); /* Use hover color */
-    color: var(--button-hover-text-color)
-  }
+    color: inherit;
+}

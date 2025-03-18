@@ -5,7 +5,7 @@
     padding: var(--spacing-unit);
     background-color: var(--background-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin-bottom: var(--spacing-unit); /* Add margin here */
+    margin: var(--spacing-unit); /* Add margin here */
   }
   
   .cardTitle {

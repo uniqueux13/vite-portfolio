@@ -1,0 +1,5 @@
+/* src/components/Projects/Projects.module.css */
+
+.projectsPage {
+    padding: var(--spacing-unit);
+}

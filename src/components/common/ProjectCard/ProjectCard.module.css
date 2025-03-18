@@ -1,0 +1,41 @@
+/* src/components/common/ProjectCard/ProjectCard.module.css */
+.projectCard {
+    border: 1px solid var(--card-border-color);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    background-color: var(--card-background-color);
+    box-shadow: var(--card-box-shadow);
+    margin-bottom: var(--spacing-unit); /* Add spacing between cards */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack content vertically */
+  }
+  
+  .projectImage {
+    width: 100%; /* Make image fill the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: var(--card-border-radius); /* Apply border-radius */
+    margin-bottom: var(--spacing-unit); /* Space between image and text */
+    display: block; /* Important for removing extra space below image */
+  }
+  
+  .projectContent {
+    flex-grow: 1; /* Allow content to take up remaining space */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .projectTitle {
+    font-size: var(--font-size-h3);
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+  }
+  
+  .projectDescription {
+    color: var(--text-color);
+    margin-bottom: var(--spacing-unit);
+    flex-grow: 1; /* Allow description to take available space */
+  }
+  .buttonLink {
+      text-decoration: none; /*Remove the underline*/
+      color: inherit; /*Take on the color of the parent*/
+  }

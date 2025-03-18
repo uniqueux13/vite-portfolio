@@ -65,9 +65,9 @@ interface Theme {
   
       // Navigation Bar
       '--navbar-background-color': '#333333',
-      '--navbar-link-color': '#ffffff',
+      '--navbar-link-color': '#333333',
       '--navbar-link-hover-color': '#cccccc',
-      '--navbar-padding': '0.5rem 1rem',
+      '--navbar-padding': '1rem 1rem',
   
       // Hero Section
        '--hero-background-color': '#007bff',

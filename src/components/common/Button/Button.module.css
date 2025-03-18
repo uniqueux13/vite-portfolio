@@ -16,11 +16,3 @@
       background-color: var(--button-hover-background-color);
       color: var(--button-hover-text-color)
   }
-  
-  .primary {
-    /* No need for specific styles here, use variables in .button */
-  }
-  
-  .secondary {
-    /* No need for specific styles here, use variables in .button */
-  }
