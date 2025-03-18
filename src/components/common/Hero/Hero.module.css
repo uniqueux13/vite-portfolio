@@ -1,6 +1,7 @@
 /* src/components/common/Hero/Hero.module.css */
 .hero {
-    background-color: var(--primary-color); /* Fallback color */
+    background-color: var(--hero-background-color); /* Fallback color */
+    background-image: var(--hero-background-image);
     background-size: cover;
     background-position: center;
     color: white; /* Default text color - might need adjustment based on themes */
@@ -8,7 +9,6 @@
     text-align: center;
     /* Optional: Add a semi-transparent overlay */
     position: relative;
-    margin-bottom: var(--spacing-unit); /* Add margin here */
   }
   
   .heroContent {
@@ -30,10 +30,14 @@
   .heroTitle {
     font-size: 3rem;
     margin-bottom: 1rem;
-     color: var(--accent-color);
+     color: var(--hero-title-color);
   }
   
   .heroSubtitle {
     font-size: 1.5rem;
-    color: var(--text-color);
+    color: var(--hero-subtitle-color);
+  }
+  .buttonLink {
+      text-decoration: none; /*Remove the underline*/
+      color: inherit; /*Take on the color of the parent*/
   }

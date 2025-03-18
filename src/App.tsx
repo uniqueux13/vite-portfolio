@@ -10,13 +10,12 @@ function App() {
   return (
     <Layout>
       <Hero
-        title="From Zero to Portfolio in 4 Hours"
-        subtitle="The secret? A UX designer who knows how to talk to robots."
-        imageUrl="/images/hero-image.jpg" // Replace with actual path
+        title="I'm Kyle the UX Magician."
+        subtitle="My Best Trick? Making Complex Problems Vanish."
       />
 
       <Card title="About Me">
-        <p>I'm a UX Magician. My Best Trick? Making Complex Problems Vanish. I'm a passionate writer with a focus on creating user-centered and visually appealing digital experiences. I have experience in user research, wireframing, prototyping, interaction design, and front-end development.  My goal is to create products that are not only beautiful but also intuitive and easy to use.</p>
+        <p>I'm a passionate writer with a focus on creating user-centered and visually appealing digital experiences. I have experience in user research, wireframing, prototyping, interaction design, and front-end development.  My goal is to create products that are not only beautiful but also intuitive and easy to use.</p>
       </Card>
 
       <VideoCard
