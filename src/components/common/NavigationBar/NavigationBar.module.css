@@ -1,7 +1,8 @@
+/* src/components/common/NavigationBar/NavigationBar.module.css */
 .navBar {
-    background-color: #333;
-    padding: 1rem 0;
-    margin-bottom: var(--spacing-unit); /* Add margin here */
+    background-color: var(--navbar-background-color); /* Use theme variable */
+    padding: var(--navbar-padding); /* Use theme variable */
+      margin-bottom: var(--spacing-unit); /*Add Space between navbar and other content*/
   }
   
   .navList {
@@ -13,17 +14,24 @@
   }
   
   .navItem {
-    margin: 0 1rem;
+    margin: 0 1rem; /*  Keep this for horizontal spacing */
   }
   
   .navLink {
-    color: white;
+    color: var(--navbar-link-color); /* Use theme variable */
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    padding: 0.5rem 1rem; /* Keep this for link padding */
+    border-radius: var(--border-radius); /* Use theme variable */
     transition: background-color 0.3s ease;
+    border: none;        /* Remove default button border */
+    background-color: transparent;  /* Start with transparent background */
+    cursor: pointer;
+    font-family: inherit;      /* Inherit font from parent */
+    font-size: 1rem;
   }
   
-  .navLink:hover {
-    background-color: #555;
+  .navLink:hover,
+  .navLink.active { /* Style for hover AND active states */
+    background-color: var(--navbar-link-hover-color); /* Use hover color */
+    color: var(--button-hover-text-color)
   }
