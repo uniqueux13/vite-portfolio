@@ -8,6 +8,7 @@
     text-align: center;
     /* Optional: Add a semi-transparent overlay */
     position: relative;
+    margin-bottom: var(--spacing-unit); /* Add margin here */
   }
   
   .heroContent {
